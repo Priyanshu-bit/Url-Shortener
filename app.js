@@ -76,4 +76,4 @@ app.use((err, req, res, next) => {
   res.render('index', { error: err.message })
 })
 
-app.listen(3000, () => console.log('🌏 on port 3000...'))
+app.listen(`${process.env.PORT}`, () => console.log(`🌏 on port ${process.env.PORT}...`))
